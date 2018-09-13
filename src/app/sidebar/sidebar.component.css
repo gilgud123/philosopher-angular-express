@@ -10,11 +10,11 @@ ul {
 }
 
 li a {
-  color: #fff;
+  color: black;
   padding: 20px;
   display: block;
 }
 
 .activated {
-  background-color: #00a8ff;
+  background-color: rebeccapurple;
 }

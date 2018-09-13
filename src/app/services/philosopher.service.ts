@@ -12,4 +12,8 @@ export class PhilosopherService {
   getPhilosophers() {
     return this.http.get(`${environment.api}/philosopher`);
   }
+
+  getPhilosopher(userId) {
+    return this.http.get(`${environment.api}/philosopher/${userId}`);
+  }
 }

@@ -1,18 +1,18 @@
 <nav>
   <ul>
     <li>
-      <a routerLink="">
-        <i class="material-icons">account_circle</i>
+      <a routerLink="" [class.activated]="currentUrl == '/'">
+        <i class="material-icons">home</i>
       </a>
     </li>
     <li>
-      <a routerLink="philosopher">
-        <i class="material-icons">P</i>
+      <a routerLink="philosopher" [class.activated]="currentUrl == '/philosopher'">
+        <i class="material-icons">school</i>
       </a>
     </li>
     <li>
-      <a routerLink="quote">
-        <i class="material-icons">Q</i>
+      <a routerLink="quote" [class.activated]="currentUrl == '/quote'">
+        <i class="material-icons">comment</i>
       </a>
     </li>
   </ul>

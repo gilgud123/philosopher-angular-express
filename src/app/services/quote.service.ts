@@ -12,4 +12,8 @@ export class QuoteService {
   getQuotes() {
     return this.http.get(`${environment.api}/quote`);
   }
+
+  getQuotesByPhilosopherName(name) {
+    return this.http.get(`${environment.api}/quote/philosopher/${name}`);
+  }
 }

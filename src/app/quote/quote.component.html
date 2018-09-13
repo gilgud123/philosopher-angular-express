@@ -1,3 +1,7 @@
-<p>
-  quote works!
-</p>
+<h1>Quotes</h1>
+
+<ul [@listStagger]="quotes$">
+  <li *ngFor="let quote of quotes$">
+     <p>{{ quote.text }} by  <strong>{{ quote.philosopher }}</strong></p>
+  </li>
+</ul>

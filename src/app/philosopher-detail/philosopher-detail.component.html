@@ -1,3 +1,12 @@
-<p>
-  philosopher-detail works!
-</p>
+<h1>{{ philosopher$.name }}</h1>
+
+<ul>
+  <li><strong>Description:</strong> {{ philosopher$.description }}</li>
+  <ul><strong>Categories:</strong>
+      <li *ngFor="let c of philosopher$.categories">{{c}}</li>
+  </ul>
+
+  <ul><strong>Quotes:</strong>
+    <li *ngFor="let quote of getQuotes(philosopher$.name)">{{quote.text}}</li>
+  </ul>
+</ul>
